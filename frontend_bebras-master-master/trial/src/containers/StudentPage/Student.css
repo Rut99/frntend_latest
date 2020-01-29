@@ -1,33 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>  */
 
 * {
 	box-sizing: border-box;
 }
-  
 
-::-webkit-file-upload-button {
-	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-	
-  }
- 
-	
-
-.dist{
-	margin: 3%;
-}
-
-.Login{
+.Student{
 	background: rgba(255, 255, 255, 0.6);
 	display: flex;
 	justify-content: center;
@@ -67,16 +45,11 @@ a {
 	text-decoration: none;
 	margin: 5px 0;
 }
-a:hover{
-	color: rgb(21, 118, 209);
-    font-weight: 550;
-}
+
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background-color: #FF4B2B;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -110,7 +83,7 @@ form {
 	text-align: center;
 }
 
-.inputlogin {
+input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
@@ -127,8 +100,8 @@ form {
 	overflow: hidden; 
 	 width: 1000px; 
 
-	 max-width: 60%;
-	min-height: 80%;  
+	 max-width: 100%;
+	min-height: 600px;  
 }
 
 .form-container {
@@ -251,14 +224,10 @@ form {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	font-size: xx-large;
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
-	border-color: #FF4B2B;
-	border-width: 2px;
 }
-
 
 footer {
     background-color: #222;

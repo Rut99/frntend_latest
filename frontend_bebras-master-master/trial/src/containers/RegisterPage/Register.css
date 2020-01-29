@@ -35,7 +35,6 @@
 .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
   top: 0;
   margin-top: -8px;
-  
 }
 
 .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
@@ -73,29 +72,22 @@
 
 .react-datepicker-wrapper {
   display: inline-block;
-  padding: 0;
-  border: 0;
-  background-color: #eee;
-	border: none;
-	padding: 7px 15px;
-	margin: 3px 0;
-    width: 100%;
-    color: rgb(105, 102, 102);
-  
+  border: black;
+  background-color: blue;
+  width: 100%;
 }
 
 .react-datepicker {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8rem;
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #d41515;
-  border-radius: 0.3rem;
-  display: inline-block;
-  position: relative;
-  
-  
-}
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #aeaeae;
+    border-radius: 0.3rem;
+    display: inline-block;
+    position: relative;
+    width:100%;
+  }
 
 .react-datepicker--time-only .react-datepicker__triangle {
   left: 35px;
@@ -155,12 +147,13 @@
 
 .react-datepicker__header {
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #eee;
   border-bottom: 1px solid #aeaeae;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
   padding-top: 8px;
   position: relative;
+  width: 100%;
 }
 
 .react-datepicker__header--time {
@@ -288,8 +281,8 @@
 .react-datepicker__input-time-container {
   clear: both;
   width: 100%;
-  float: left;
-  margin: 5px 0 10px 15px;
+  /* float: left; */
+  /* margin: 5px 0 10px 15px; */
   text-align: left;
 }
 
@@ -307,7 +300,7 @@
 }
 
 .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input {
-  width: 85px;
+  /* width: 85px; */
 }
 
 .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type="time"]::-webkit-inner-spin-button,
@@ -321,7 +314,7 @@
 }
 
 .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__delimiter {
-  margin-left: 5px;
+  /* margin-left: 5px; */
   display: inline-block;
 }
 
@@ -579,6 +572,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
+  
 }
 
 .react-datepicker__year-read-view,
@@ -801,7 +795,6 @@
 
 
 
-
 :root {
 	--PhoneInput-color--focus: #001013;
 	--PhoneInputInternationalIconPhone-opacity: 0.8;
@@ -968,6 +961,7 @@ div{
 
 .ddside{
     display:block; 
+    width: 100%;
 
 }
 .ddside1{
@@ -975,7 +969,7 @@ div{
 	border: none;
 	padding: 7px 15px;
 	margin: 5px 0px;
-    width:145px ;
+    width: 49%;
     align-content: stretch;
     color: rgb(105, 102, 102);
 }
@@ -1052,8 +1046,22 @@ form {
 	padding: 7px 15px;
 	margin: 3px 0;
     width: 100%;
-    color: rgb(105, 102, 102);
+    /* color: rgb(105, 102, 102); */
     /* position: relative; */
+}
+
+select option {
+  color: rgb(105, 102, 102); 
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: rgb(105, 102, 102);
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
 }
 
 .dd1 {
@@ -1075,7 +1083,7 @@ form {
 	 width: 1000px; 
     
 	 max-width: 60%;
-	min-height: 100%;  
+	min-height: 90%;  
 }
 
 .form-container {
@@ -1091,7 +1099,7 @@ form {
     z-index: 2;
 }
 
-.containerTest.right-panel-active .sign-in-container {
+.containerTestReg.right-panel-active .sign-in-container {
     transform: translateX(100%);
 }
 
@@ -1102,7 +1110,7 @@ form {
     z-index: 1;
 }
 
-.containerTest.right-panel-active .sign-up-container {
+.containerTestReg.right-panel-active .sign-up-container {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -1132,14 +1140,14 @@ form {
     z-index: 100;
 }
 
-.containerTest.right-panel-active .overlay-container{
+.containerTestReg.right-panel-active .overlay-container{
     transform: translateX(-100%);
 }
 
 .overlay {
     background: #FF416C;
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    /* background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -1152,7 +1160,7 @@ form {
     transition: transform 0.6s ease-in-out;
 }
 
-.containerTest.right-panel-active .overlay {
+.containerTestReg.right-panel-active .overlay {
     transform: translateX(50%);
 }
 
@@ -1175,7 +1183,7 @@ form {
     transform: translateX(-20%);
 }
 
-.containerTest.right-panel-active .overlay-left {
+.containerTestReg.right-panel-active .overlay-left {
     transform: translateX(0);
 }
 
@@ -1184,7 +1192,7 @@ form {
     transform: translateX(0);
 }
 
-.containerTest.right-panel-active .overlay-right {
+.containerTestReg.right-panel-active .overlay-right {
     transform: translateX(20%);
 }
 

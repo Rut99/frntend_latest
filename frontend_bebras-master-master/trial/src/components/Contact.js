@@ -54,10 +54,10 @@ class Contact extends React.Component {
 										</ul>
 										<p>Please feel free to contact us!</p>
 										<ul class="contact-info">
-											<li><i class="fa fa-map-marker"></i>Address: 30 New York Street, New York, USA</li>
+											<li><i class="fa fa-map-marker"></i>Address: Soft Corner, Karve road, Pune</li>
 											<li><i class="fa fa-mobile"></i>Phone: 000 - 111 - 222</li>
 											<li><i class="fa fa-fax"></i>Fax: 000 - 111 - 222</li>
-											<li><i class="fa fa-envelope"></i>Email: contact [at] lawyers [dot] com</li>
+											<li><i class="fa fa-envelope"></i>Email: contact@soft-corner.com</li>
 										</ul>
 
 										<div class="video-widget">

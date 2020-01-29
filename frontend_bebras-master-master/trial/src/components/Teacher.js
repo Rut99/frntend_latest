@@ -111,13 +111,13 @@ class Teacher extends React.Component {
 </section>
 <div class="zz-bottom"></div>
 
-<section id="home-latest-activity" class="wrap margin-t72">
+{/* <section id="home-latest-activity" class="wrap margin-t72">
 
 <div class="container">
-
+//white
 </div>
 
-</section>
+</section> */}
 </div>
 </div>
   );

@@ -1,12 +1,10 @@
 import React from "react";
 import './Login.css';
 
+
 class Now extends React.Component {
 		  
-	componentDidMount() {
 	
-		
-    }
 	render() {
 	
 		return (
@@ -27,10 +25,13 @@ class Now extends React.Component {
                                 <div class="dist"></div>
 								<input class="inputlogin" type="email" placeholder="Email" />
 								<input class="inputlogin" type="password" placeholder="Password" />
+								
+
 								<br></br>
 								<button>Sign In</button>
 								<a href="#">Forgot your password?</a>
 								<a href="/#/Home">Back To Home</a>
+								<a href="/Register">Not a user? Register here!</a>
 							</form>
 						</div>
 						<div class="overlay-container">
@@ -39,6 +40,7 @@ class Now extends React.Component {
 								<div class="overlay-panel overlay-right">
 								<h1>Welcome Back!</h1>
 									<p>To keep connected with us please login with your personal info</p>
+									
 								</div>
 							</div>
 						</div>

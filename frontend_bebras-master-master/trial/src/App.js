@@ -9,6 +9,8 @@ import {
 // import Home from "./Home";
 import Register from "./containers/RegisterPage/Register";
 import Now from "./containers/LoginPage/Login";
+import aggridtry from "./containers/aggridtry/aggridtry";
+import ImportFile from "./containers/ImportFile/ImportFile";
 import NewApp from "./containers/NewApp/NewApp";
 class App extends React.Component {
   render() { 
@@ -17,6 +19,9 @@ class App extends React.Component {
             <Route exact strict path="/" component={NewApp} />
             <Route exact strict path="/Register" component={Register} />
             <Route exact strict path="/Login" component={Now} />
+            <Route exact strict path="/aggridtry" component={aggridtry} />
+            <Route exact strict path="/importfile" component={ImportFile} />
+            {/* <Route exact strict path="/studentreg" component={StudentReg} /> */}
           </Router>
     );
   }
