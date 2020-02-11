@@ -27,13 +27,13 @@ class Contact extends React.Component {
 								<div class="col-md-6">
 									<div id="contact-form-holder">
 										<form method="post" id="contact-form">
-											<label>Name</label>
+											<label class="contactlabel">Name</label>
 											<p><input type="text" name="name" class="comm-field" /></p>
-											<label>Email</label>
+											<label class="contactlabel">Email</label>
 											<p><input type="text" name="email" class="comm-field" /></p>
-											<label>Subject</label>
+											<label class="contactlabel">Subject</label>
 											<p><input type="text" name="subject" class="comm-field" /></p>
-											<label>Message</label>
+											<label class="contactlabel">Message</label>
 											<p> <textarea name="message" id="msg-contact" rows="7"></textarea></p>
 											<p class="contact-btn"><input type="submit" value="Send message" id="submit-contact" /></p>
 										</form>

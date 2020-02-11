@@ -1,36 +1,37 @@
-import DatePicker from "react-datepicker";
- 
-//import "react-datepicker/dist/react-datepicker.css";
+
 import React from "react";
-import  { useState } from 'react';
+
 import PhoneInput from 'react-phone-number-input'
 import './Register.css';
-
-
+import Select from 'react-select';
+const options = [
+	{ value: 'chocolate', label: 'Chocolate' },
+	{ value: 'strawberry', label: 'Strawberry' },
+	{ value: 'vanilla', label: 'Vanilla' },
+];
+const optionsgender = [
+	{ value: 'male', label: 'Male' },
+	{ value: 'female', label: 'Female' },
+	{ value: 'other', label: 'Other' },
+];
+const optionsschooltype = [
+	{ value: 'public', label: 'Public' },
+	{ value: 'private', label: 'Private' },
+	{ value: 'other', label: 'Other' },
+];
 class Register extends React.Component {
-
 	state = {
-		date: new Date(),
-	  }
-	 
-	  onChange = date => this.setState({ date })
-		
+		selectedOption: null,
+	};
+	handleChange = selectedOption => {
+		this.setState({ selectedOption });
+		console.log(`Option selected:`, selectedOption);
+	};
 
-	constructor(props) {
-		super(props);
-		this.state = {}
 
-	}
-	logChange(val) {
-		console.log("Selected: " + val);
-	}
 
-	handleChange(e) {
-		
-	}
-	
 	render() {
-		
+		const { selectedOption } = this.state;
 		return (
 			<div className="Register">
 				<title>Home </title>
@@ -46,20 +47,37 @@ class Register extends React.Component {
 								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 							</div>
 							<div class="dist"></div>
-							<input class="inputreg" type="text" placeholder="Username" />
-							<input class="inputreg" type="password" placeholder="Password" />
-							<select className="dd1" placeholder="Gender">
-								<option value="" disabled selected>Select gender</option>
-								<option value="male">Male</option>
-								<option value="female">Female</option>
-								<option value="other">Other</option>
-							</select>
-							<input class="inputreg" type="date" name="birthdate" placeholder="Birthdate"/>
-							<PhoneInput
-    placeholder="Enter phone number"
-	value={ this.state.phone }
-    onChange={ phone => this.setState({ phone }) }/>
-							<input class="inputreg" type="email" placeholder="Email" />
+							<div class="wrap-input100 validate-input" data-validate="address is required">
+								<input class="input100" type="text" name="address1" placeholder="Username" />
+								<span class="focus-input100-1"></span>
+								<span class="focus-input100-2"></span>
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="address is required">
+								<input class="input100" type="password" name="address1" placeholder="Password" />
+								<span class="focus-input100-1"></span>
+								<span class="focus-input100-2"></span>
+							</div>
+							<Select
+								value={selectedOption}
+								onChange={this.handleChange}
+								placeholder="Select gender"
+								options={optionsgender}
+							/>
+							<div class="wrap-input100 ">
+								<input class="input100" type="date" name="birthdate" placeholder="Birthdate" />
+							</div>
+							<div class="wrap-input100">
+								<PhoneInput
+									placeholder="Phone number"
+									value={this.state.phone}
+									onChange={phone => this.setState({ phone })} />
+							</div>
+
+							<div class="wrap-input100 validate-input" data-validate="address is required">
+								<input class="input100" type="email" name="address1" placeholder="Email" />
+								<span class="focus-input100-1"></span>
+								<span class="focus-input100-2"></span>
+							</div>
 							<div class="dist"></div>
 							<button>Sign Up</button>
 						</form>
@@ -73,45 +91,79 @@ class Register extends React.Component {
 								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 							</div>
 
-							<div class="ddside" style={{"padding":"0px"}}>
-							
-							<select class="ddside1" style={{"margin-right":"5px"}} placeholder="Country">
-								<option value=" " disabled selected>Country</option>
-								<option value="Public">Public</option>
-								<option value="private">pivate</option>
-							</select>
-							
-							<select class="ddside1" placeholder="State">
-								<option value=" " disabled selected>State</option>
-								<option value="Public">Public</option>
-								<option value="private">pivate</option>
-							</select>
+							<div class="ddside" style={{ "padding": "0px" }}>
+								<Select
+									value={selectedOption}
+									onChange={this.handleChange}
+									placeholder="Select country"
+									options={options}
+								/>
+								<Select
+									value={selectedOption}
+									onChange={this.handleChange}
+									placeholder="Select state"
+									options={options}
+								/>
+								<Select
+									value={selectedOption}
+									onChange={this.handleChange}
+									placeholder="Select district"
+									options={options}
+								/>
+
+								<div class="wrap-input100 validate-input" data-validate="address is required">
+									<input class="input100" type="text" name="address1" placeholder="Address Line 1" />
+									<span class="focus-input100-1"></span>
+									<span class="focus-input100-2"></span>
+								</div>
+
+								<div class="wrap-input100 validate-input" >
+									<input class="input100" type="text" name="address2" placeholder="Address Line 2" />
+									<span class="focus-input100-1"></span>
+									<span class="focus-input100-2"></span>
+								</div>
+
+								<div class="wrap-input100 validate-input" data-validate="Name is required">
+									<input class="input100" type="text" name="city" placeholder="City" />
+									<span class="focus-input100-1"></span>
+									<span class="focus-input100-2"></span>
+								</div>
+
+								<div class="wrap-input100 validate-input" data-validate="Name is required">
+									<input class="input100" type="text" name="pincode" placeholder="Pincode" />
+									<span class="focus-input100-1"></span>
+									<span class="focus-input100-2"></span>
+								</div>
+
+								<div class="wrap-input100 validate-input" data-validate="Name is required">
+									<input class="input100" type="text" name="schoolname" placeholder="School name" />
+									<span class="focus-input100-1"></span>
+									<span class="focus-input100-2"></span>
+								</div>
+								<Select
+									value={selectedOption}
+									onChange={this.handleChange}
+									placeholder="Select school type"
+									options={optionsschooltype}
+								/>
+
+								<div class="wrap-input100 validate-input" data-validate="Name is required">
+									<input class="input100" type="text" name="udaise" placeholder="UDAISE code" />
+									<span class="focus-input100-1"></span>
+									<span class="focus-input100-2"></span>
+								</div>
+
+								<div class="wrap-input100">
+									<PhoneInput
+										placeholder="Phone number"
+										value={this.state.phone}
+										onChange={phone => this.setState({ phone })} />
+								</div>
 							</div>
-							<select className="dd1" placeholder="District">
-								<option value=" " disabled selected>District</option>
-								<option value="Public">Public</option>
-								<option value="private">pivate</option>
-							</select>
-
-							<input class="inputreg" type="address1" placeholder="address line 1" />
-							<input class="inputreg" type="address2" placeholder="address line 2" />
-							<input class="inputreg" type="city" placeholder="town/city" />
-							<input class="inputreg" type="number" placeholder="pincode" />
-							<input class="inputreg" type="text" placeholder="School Name" />
-
-							<select className="dd1" placeholder="school type">
-								<option value=" " disabled selected>School Type</option>
-								<option value="Public">Public</option>
-								<option value="private">pivate</option>
-							</select>
-							<input class="inputreg" type="text" placeholder="UDISE code" />
-							<PhoneInput
-    placeholder="Enter phone number"
-	value={ this.state.phone }
-    onChange={ phone => this.setState({ phone }) }/>
-	<div class="dist"> </div>
-<button>Sign Up</button>						
-</form>
+							<div class="dist"> </div>
+							<button>Register school</button>
+							<div class="dist"> </div>
+						</form>
 					</div>
 					<div class="overlay-container">
 						<div class="overlay">

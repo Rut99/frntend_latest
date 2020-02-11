@@ -48,6 +48,7 @@ class NewApp extends React.Component {
                           <li><NavLink to="/Competition">Competition</NavLink></li>
                           <li><NavLink to="/Result">Result</NavLink></li>
                           <li><NavLink to="/Contact">Contact</NavLink></li>
+                          {/* <li><NavLink to="/Contact1">Contact</NavLink></li> */}
                           <li><button type="button" class="btn btn-info btn-md ">
           <span class="glyphicon glyphicon-log-out"></span> Log out
         </button>
@@ -70,6 +71,7 @@ class NewApp extends React.Component {
             <Route path="/Teacher" component={Teacher} />
             <Route path="/Practice_challenge" component={Practice_challenge} />
             <Route path="/Contact" component={Contact} />
+            <Route path="/Contact1" component={Contact} />
             <Route path="/Result" component={Result} />
           </div>
         </div>

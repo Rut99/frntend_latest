@@ -12,6 +12,7 @@ import Now from "./containers/LoginPage/Login";
 import aggridtry from "./containers/aggridtry/aggridtry";
 import ImportFile from "./containers/ImportFile/ImportFile";
 import NewApp from "./containers/NewApp/NewApp";
+import TeacherNavbar from "./containers/Teacher/TeacherNavbar";
 class App extends React.Component {
   render() { 
     return (
@@ -21,7 +22,7 @@ class App extends React.Component {
             <Route exact strict path="/Login" component={Now} />
             <Route exact strict path="/aggridtry" component={aggridtry} />
             <Route exact strict path="/importfile" component={ImportFile} />
-            {/* <Route exact strict path="/studentreg" component={StudentReg} /> */}
+            {/* <Route exact strict path="/teacher" component={TeacherNavbar} /> */}
           </Router>
     );
   }
