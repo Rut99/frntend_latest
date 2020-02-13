@@ -233,7 +233,7 @@ a:hover{
 	color: rgb(21, 118, 209);
     font-weight: 550;
 }
-..buttonlogin login {
+.buttonlogin login {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background: #FF416C;
@@ -248,11 +248,11 @@ a:hover{
 	transition: transform 80ms ease-in;
 }
 
-..buttonlogin login :active {
+.buttonlogin login :active {
 	transform: scale(0.95);
 }
 
-..buttonlogin login:focus {
+.buttonlogin login:focus {
 	outline: none;
 }
 

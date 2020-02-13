@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 import Select from 'react-select';
 import './TeacherReg.css';
 import PhoneInput from 'react-phone-number-input'
@@ -11,7 +10,11 @@ const optionsdd = [
   { value: 'strawberry', label: 'Strawberry' },
   { value: 'vanilla', label: 'Vanilla' },
 ];
-
+const optionsgender = [
+	{ value: 'male', label: 'Male' },
+	{ value: 'female', label: 'Female' },
+	{ value: 'other', label: 'Other' },
+];
 
 class BulkRegistration extends React.Component {
   state = {
@@ -26,38 +29,18 @@ class BulkRegistration extends React.Component {
 
     return (
       <div className="App ">
+       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+            <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
         <title>Home </title>
-        <meta charset="UTF-8"></meta>
-
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900%7CPacifico' rel='stylesheet' type='text/css' />
-        <link rel="shortcut icon" src={require('../../images/favicon.ico')} />
-        <link rel="stylesheet" src={require('../../css/bootstrap/css/bootstrap.min.css')} type="text/css" media="all" />
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" src={require('../../style.css')} type="text/css" media="all" />
-        <link rel="stylesheet" src={require('../../js/prettyphoto/css/prettyPhoto.css')} type="text/css" media="all" />
-        <div id='main' class="wrap" >
-          {/* <section class="page-top wrap">
-
-            <h2 class="page-section-title">Students</h2>
-
-          </section>
-
-
-          <div class="zz-bottom"></div> */}
-
-
-          <section class=" margin-t72 wrap">
-            <div class="container">
-              <div class="row">
-              <div className="containerTestReg" id="containerTest11">
-					<div class="form-container sign-up-container">
-						<form action="#" >
-							<h1>Teacher Registration</h1>
-							<div class="social-container">
-								<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-								<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-								<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-							</div>
+        <meta charSet="UTF-8"></meta>
+        <div class="bluesection">
+          <h1 class="bluecontent">Register a teacher</h1>
+          <div class="zz-bottom"></div>
+        </div>
+		<div class=" sign-in-container_indi">
+		<form action="#" >
+		<h1>Teacher Registration</h1>
+							
 							<div class="dist"></div>
 							<div class="wrap-input100 validate-input" data-validate="address is required">
 								<input class="input100" type="text" name="address1" placeholder="Username" />
@@ -73,7 +56,7 @@ class BulkRegistration extends React.Component {
 								value={selectedOption}
 								onChange={this.handleChange}
 								placeholder="Select gender"
-								options={optionsdd}
+								options={optionsgender}
 							/>
 							<div class="wrap-input100 ">
 								<input class="input100" type="date" name="birthdate" placeholder="Birthdate" />
@@ -93,28 +76,12 @@ class BulkRegistration extends React.Component {
 							<div class="dist"></div>
 							<button>Sign Up</button>
 						</form>
-					</div>
-              </div>
-             </div>
+					
 
-            </div>
-           </section> 
-
-         
-          {/* <div class="zz-top"></div>
-          <section class="wrap margin-t72">
-<div class="bkg-cover  padding-72">
-
+			</div>
 
 
 </div>
-</section>
-
-          <div class="zz-top-foo"></div> */}
-
-
-
-        </div></div>
     );
   }
 
