@@ -33,7 +33,7 @@ class Now extends React.Component {
 							</div>
 
 							<br></br>
-							<button>Sign In</button>
+							<button class="buttonlogin">Sign In</button>
 							<a href="#">Forgot your password?</a>
 							<a href="/#/Home">Back To Home</a>
 							<a href="/Register">Not a user? Register here!</a>

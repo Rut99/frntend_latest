@@ -73,6 +73,7 @@ class NewApp extends React.Component {
             <Route path="/Contact" component={Contact} />
             <Route path="/Contact1" component={Contact} />
             <Route path="/Result" component={Result} />
+           
           </div>
         </div>
 

@@ -12,7 +12,7 @@
   }
   
   
-  input {
+ .Login input {
 	  outline: none;
 	  border: none;
   }
@@ -155,7 +155,7 @@
 	box-sizing: border-box;
 }
 .css-2b097c-container{
-	position: relative;
+	position: absolute;
     box-sizing: border-box;
 	width: 100%;
 	background-color: #fff;
@@ -167,7 +167,7 @@
 	line-height: 1.2;
 } 
 
-::-webkit-file-upload-button {
+::-webkit-file-upload-.buttonlogin  {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background: #FF416C;
@@ -233,7 +233,7 @@ a:hover{
 	color: rgb(21, 118, 209);
     font-weight: 550;
 }
-button {
+..buttonlogin login {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background: #FF416C;
@@ -248,15 +248,15 @@ button {
 	transition: transform 80ms ease-in;
 }
 
-button:active {
+..buttonlogin login :active {
 	transform: scale(0.95);
 }
 
-button:focus {
+..buttonlogin login:focus {
 	outline: none;
 }
 
-button.ghost {
+.buttonlogin .ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
