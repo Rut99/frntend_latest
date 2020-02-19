@@ -1,0 +1,11 @@
+.optionsbtn{
+    margin-left: 3px;
+}
+.correctoption{
+    border: 3px solid green;
+
+}
+.wrongoption{
+    border: 3px solid red;
+
+}
