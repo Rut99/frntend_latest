@@ -7,24 +7,24 @@
 }
 
 :root {
-	--PhoneInput-color--focus: #001013;
-	--PhoneInputInternationalIconPhone-opacity: 0.8;
-	--PhoneInputInternationalIconGlobe-opacity: 0.65;
-	--PhoneInputCountrySelect-marginRight: 0.35em;
-	--PhoneInputCountrySelectArrow-width: 0.3em;
-	--PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
-	--PhoneInputCountrySelectArrow-marginTop: calc(var(--PhoneInputCountrySelectArrow-height) / 2);
-	--PhoneInputCountrySelectArrow-borderWidth: 1px;
-	--PhoneInputCountrySelectArrow-opacity: 0.45;
-	--PhoneInputCountrySelectArrow-color: inherit;
-	--PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
-	--PhoneInputCountrySelectArrow-transform: rotate(45deg);
-	--PhoneInputCountryFlag-aspectRatio: 1.5;
-	--PhoneInputCountryFlag-height: 1em;
-	--PhoneInputCountryFlag-borderWidth: 1px;
-	--PhoneInputCountryFlag-borderColor: rgba(0,0,0,0.5);
-	--PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
-	--PhoneInputCountryFlag-backgroundColor--loading: rgba(0,0,0,0.1);
+    --PhoneInput-color--focus: #001013;
+    --PhoneInputInternationalIconPhone-opacity: 0.8;
+    --PhoneInputInternationalIconGlobe-opacity: 0.65;
+    --PhoneInputCountrySelect-marginRight: 0.35em;
+    --PhoneInputCountrySelectArrow-width: 0.3em;
+    --PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
+    --PhoneInputCountrySelectArrow-marginTop: calc(var(--PhoneInputCountrySelectArrow-height) / 2);
+    --PhoneInputCountrySelectArrow-borderWidth: 1px;
+    --PhoneInputCountrySelectArrow-opacity: 0.45;
+    --PhoneInputCountrySelectArrow-color: inherit;
+    --PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
+    --PhoneInputCountrySelectArrow-transform: rotate(45deg);
+    --PhoneInputCountryFlag-aspectRatio: 1.5;
+    --PhoneInputCountryFlag-height: 1.3em;
+    --PhoneInputCountryFlag-borderWidth: 0px;
+    --PhoneInputCountryFlag-borderColor:#fff;
+    --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
+    --PhoneInputCountryFlag-backgroundColor--loading: #fff;
 }
 
 .PhoneInput {
@@ -170,27 +170,18 @@ div{
     padding-inline-start: 1rem;
 }
 
-.ddside{
-    display:block; 
-    width: 100%;
 
-}
-.ddside1{
-    background-color: #eee;
-	border: none;
-	padding: 7px 15px;
-	margin: 5px 0px;
-    width: 49%;
-    align-content: stretch;
-    color: rgb(105, 102, 102);
-}
-
-h1 {
+.Register h1 {
     font-weight: bold;
-    margin: 0;
-}
+    /* margin-top: 200px; */
 
-h2 {
+}
+.sign-in-container h1 {
+    font-weight: bold;
+    margin-top: 200px;
+
+}
+.Register h2 {
     text-align: center;
 }
 
@@ -246,6 +237,7 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 0 50px;
+    /* overflow: auto; */
     height: 100%;
     text-align: center;
     /* position: relative; */
@@ -275,15 +267,6 @@ input[type="date"]:valid:before {
   content: "";
 }
 
-.dd1 {
-    background-color: #eee;
-	border: none;
-	padding: 7px 15px;
-	margin: 3px 0;
-    width: 100%;
-    color: rgb(105, 102, 102);
-}
-
 .containerTestReg {
     background-color: #fff;
 	border-radius: 10px;
@@ -302,15 +285,14 @@ input[type="date"]:valid:before {
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .sign-in-container {
     left: 0;
     width: 50%;
     z-index: 2;
-    padding-top: 70px;
-   
+   overflow: auto;
 }
 
 .containerTestReg.right-panel-active .sign-in-container {
@@ -410,14 +392,7 @@ input[type="date"]:valid:before {
     transform: translateX(20%);
 }
 
-/* .card .checkbox-container {
-    float: center;
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
-    text-align:center;
-  padding: 0px 0px;
-} */
+
 .input-title {
     clear: both;
     position: absolute;

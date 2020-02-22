@@ -119,13 +119,22 @@
                   <span class="focus-input100-1"></span>
                   <span class="focus-input100-2"></span>
                 </div>
-                <PhoneInput
+                <div className="wrap-input100">
+								<PhoneInput
+									placeholder="Phone number"
+									name="phone"
+									required
+									value={phone}
+									onChange={phone => this.setState({ phone })}
+								/>
+							</div>
+                {/* <PhoneInput
                     placeholder="Phone number"
                     name="phone"
                   
                     value={phone}
                     onChange={phone => this.setState({ phone })}
-                  />
+                  /> */}
                   <div className="wrap-input100 validate-input" data-validate="address is required">
                   <input className="input100" type="email" onChange={this.handleChange} value={email}   name="email" placeholder="Email" />
                   <span className="focus-input100-1"></span>

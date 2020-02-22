@@ -303,7 +303,7 @@ class Register extends React.Component {
 								<a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
 							</div>
 
-							<div className="ddside" style={{ "padding": "0px" }}>
+							{/* <div className="ddside" style={{ "padding": "0px" }}> */}
 								<Select
 									name="country"
 									// value={country}
@@ -391,7 +391,7 @@ class Register extends React.Component {
 									options={optionsClasses}
 								/>
 
-							</div>
+							{/* </div> */}
 							
 							<div className="dist"> </div>
 							<button>Register school</button>

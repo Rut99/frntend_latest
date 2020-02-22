@@ -9,3 +9,9 @@
     border: 3px solid red;
 
 }
+.hidden {
+    display:none;
+ }
+ .show{
+    display:block;
+ }
